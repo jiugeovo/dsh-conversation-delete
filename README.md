@@ -60,7 +60,7 @@ sudo systemctl restart dsharness
 npm test
 ```
 
-本次备份验证结果：8 项测试全部通过。
+测试结果：8 项测试全部通过。
 
 ## 文件
 
@@ -71,8 +71,3 @@ npm test
 - `tests/`：Host 与 Client 的隔离测试。
 - `dist/dsh-conversation-delete-1.0.0.zip`：包含源码、文档和测试的完整归档。
 - `SHA256SUMS`：源码文件校验清单。
-
-## 备份说明
-
-归档日期：2026-10-21。插件运行源码保持原样；发布时补充作者、仓库、测试命令等包元数据及文档。
-归档不含会话内容、账号凭据、服务器配置或依赖目录。
