@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Delete Conversation",
+    "description": "Permanently deletes a conversation from the Session row menu, removing its log, workspace entries, and cached data."
+  }
+}

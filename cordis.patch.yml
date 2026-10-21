@@ -1,0 +1,3 @@
+- insert:
+    - id: conversation-delete
+      name: '@local/dsh-conversation-delete'

@@ -1,0 +1,47 @@
+{
+  "name": "@local/dsh-conversation-delete",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Permanently delete a conversation from the Session row menu.",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-workspace"
+      ]
+    }
+  },
+  "author": {
+    "name": "jiugeovo",
+    "url": "https://github.com/jiugeovo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiugeovo/dsh-conversation-delete.git"
+  },
+  "homepage": "https://github.com/jiugeovo/dsh-conversation-delete#readme",
+  "bugs": {
+    "url": "https://github.com/jiugeovo/dsh-conversation-delete/issues"
+  },
+  "scripts": {
+    "test": "node --test tests/host.test.mjs tests/client.test.mjs"
+  }
+}
